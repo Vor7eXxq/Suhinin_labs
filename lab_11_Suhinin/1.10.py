@@ -5,6 +5,6 @@ for line in text:
     line1 = line1.replace(" ", "")
     line1 = line1.replace(".", "")
     if len(line1) > 20:
-        with open("filtered.txt", "a")as f:
+        with open("filtered.txt", "a", encoding = "utf-8")as f:
             f.write(line)
 print("Виконано!")
